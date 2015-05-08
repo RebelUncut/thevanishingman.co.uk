@@ -192,20 +192,20 @@ picture {
   margin: 0;
   max-width: 100%; }
 
-body {
-  margin: 0;
+* {
   font-family: "Roboto", sans-serif; }
+
+body {
+  margin: 0; }
 
 section {
   min-height: 100vh; }
 
-#fold {
-  padding: 5vh;
-  background-image: url(../../assets/img/fold/VM001.jpg);
-  background-size: cover; }
-  #fold img {
-    display: block;
-    margin: 0 auto; }
+#fold .cycle-bg-image {
+  background-size: cover !important; }
+#fold img {
+  display: block;
+  margin: 5vh auto; }
 
 #synopsis {
   background: #46482F;
@@ -237,7 +237,8 @@ section {
       content: "";
       display: table; }
     #team .container > div * {
-      display: inline; }
+      display: inline;
+      color: #46482F; }
     #team .container > div h2 {
       display: block;
       text-transform: uppercase; }

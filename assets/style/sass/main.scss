@@ -4,9 +4,14 @@
 @import "neat/neat";
 @import "base/base";
 
+$accent-color: #46482F;
+
+* {
+	font-family: "Roboto", sans-serif;
+}
+
 body {
 	margin: 0;
-	font-family: "Roboto", sans-serif;
 }
 
 section {
@@ -14,19 +19,17 @@ section {
 }
 
 #fold {
-	padding: 5vh;
-	background: {
-		image: url(../../assets/img/fold/VM001.jpg);
-		size: cover;
+	.cycle-bg-image {
+		background-size: cover !important;
 	}
 	img {
 		display: block;
-		margin: 0 auto;
+		margin: 5vh auto;
 	}
 }
 
 #synopsis {
-	background: #46482F;
+	background: $accent-color;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -47,6 +50,7 @@ section {
 			@include outer-container;
 			* {
 				display: inline;
+				color: $accent-color;
 			}
 			h2 {
 				display: block;
