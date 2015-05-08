@@ -1,0 +1,65 @@
+@media screen and (max-width: 800px) {
+	section {
+		min-height: 50vh;
+	}
+
+	#fold {
+		.cycle-bg-image {
+			background-image: url(/assets/img/fold-bg.png) !important;
+			opacity: 1 !important;
+		}
+
+		i.fa {
+			display: none;
+		}
+	}
+
+	#synopsis {
+		padding: 2rem 0;
+		p {
+			font-size: 1rem;
+		}
+	}
+
+	#team {
+		padding: 2rem 0;
+		.container > div {
+			h2 {
+				margin-bottom: 1rem;
+			}
+			dl {
+				dd {
+					@include clearfix;
+					margin-left: .5rem;
+				}
+			}
+		}
+	}
+
+	#trailer {
+		height: 57vw;
+		min-height: 57vw;
+		iframe {
+			height: 57vw;
+		}
+	}
+
+	#contact {
+		display: block;
+		> * {
+			width: 100vw;
+			padding: 2rem;
+			a:last-child {
+				margin-bottom: 0;
+			}
+		}
+		.social {
+			margin-bottom: 1rem;
+		}
+		.right img {
+			width: 50vw;
+		}
+	}
+}
+
+

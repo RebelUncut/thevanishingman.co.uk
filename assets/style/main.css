@@ -205,7 +205,9 @@ section {
   background-size: cover !important; }
 #fold img {
   display: block;
-  margin: 7.5vh auto; }
+  margin: 7.5vh auto;
+  padding-left: 2rem;
+  padding-right: 2rem; }
 #fold i.fa {
   color: #46482F;
   bottom: 7.5vh;
@@ -226,10 +228,10 @@ section {
     color: white;
     font-size: 1.75rem;
     padding: 0 2rem; }
-    #synopsis p::after {
-      clear: both;
+    #synopsis p:after {
       content: "";
-      display: table; }
+      display: table;
+      clear: both; }
 
 #team {
   display: flex;
@@ -241,10 +243,10 @@ section {
       max-width: 68rem;
       margin-left: auto;
       margin-right: auto; }
-      #team .container > div::after {
-        clear: both;
+      #team .container > div:after {
         content: "";
-        display: table; }
+        display: table;
+        clear: both; }
       #team .container > div * {
         display: inline;
         color: #46482F; }
@@ -252,12 +254,17 @@ section {
         display: block;
         text-transform: uppercase;
         margin-bottom: 0; }
-      #team .container > div dl dt {
-        font-weight: normal; }
-      #team .container > div dl dd {
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-right: 1rem; }
+      #team .container > div dl {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start; }
+        #team .container > div dl dt {
+          font-weight: normal; }
+        #team .container > div dl dd {
+          font-weight: bold;
+          text-transform: uppercase;
+          margin-right: .5rem; }
     #team .container .crew h2 {
       margin-top: 2em; }
 
@@ -303,5 +310,49 @@ section {
   padding: 1rem 0; }
   #copyright p {
     margin-bottom: 0; }
+
+@media screen and (max-width: 800px) {
+  section {
+    min-height: 50vh; }
+
+  #fold .cycle-bg-image {
+    background-image: url(/assets/img/fold-bg.png) !important;
+    opacity: 1 !important; }
+  #fold i.fa {
+    display: none; }
+
+  #synopsis {
+    padding: 2rem 0; }
+    #synopsis p {
+      font-size: 1rem; }
+
+  #team {
+    padding: 2rem 0; }
+    #team .container > div h2 {
+      margin-bottom: 1rem; }
+    #team .container > div dl dd {
+      margin-left: .5rem; }
+      #team .container > div dl dd:after {
+        content: "";
+        display: table;
+        clear: both; }
+
+  #trailer {
+    height: 57vw;
+    min-height: 57vw; }
+    #trailer iframe {
+      height: 57vw; }
+
+  #contact {
+    display: block; }
+    #contact > * {
+      width: 100vw;
+      padding: 2rem; }
+      #contact > * a:last-child {
+        margin-bottom: 0; }
+    #contact .social {
+      margin-bottom: 1rem; }
+    #contact .right img {
+      width: 50vw; } }
 
 /*# sourceMappingURL=main.css.map */
