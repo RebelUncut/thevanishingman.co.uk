@@ -201,23 +201,18 @@ body {
 section {
   min-height: 100vh; }
 
-ul#nav {
-  position: fixed;
-  background: #46482F;
-  display: flex;
-  z-index: 100;
-  width: 100vw;
-  justify-content: center;
-  padding: 1rem 0; }
-  ul#nav li a {
-    color: white;
-    padding: 1rem; }
-
 #fold .cycle-bg-image {
   background-size: cover !important; }
 #fold img {
   display: block;
-  margin: 15vh auto; }
+  margin: 7.5vh auto; }
+#fold i.fa {
+  color: #46482F;
+  bottom: 7.5vh;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem; }
 
 #synopsis {
   background: #46482F;

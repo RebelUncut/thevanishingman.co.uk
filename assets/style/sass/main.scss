@@ -18,29 +18,21 @@ section {
 	min-height: 100vh;
 }
 
-ul#nav {
-	position: fixed;
-	background: $accent-color;
-	display: flex;
-	z-index: 100;
-	width: 100vw;
-	justify-content: center;
-	padding: 1rem 0;
-	li {
-		a {
-			color: white;
-			padding: 1rem;
-		}
-	}
-}
-
 #fold {
 	.cycle-bg-image {
 		background-size: cover !important;
 	}
 	img {
 		display: block;
-		margin: 15vh auto; 
+		margin: 7.5vh auto; 
+	}
+	i.fa {
+		color: $accent-color;
+		bottom: 7.5vh;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		font-size: 1.5rem;
 	}
 }
 
@@ -53,7 +45,7 @@ ul#nav {
 		@include outer-container;
 		color: white;
 		font-size: 1.75rem;
-		padding: 0 2rem;
+		padding: 0 2rem; 
 	}
 }
 
