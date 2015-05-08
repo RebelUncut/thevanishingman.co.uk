@@ -250,17 +250,58 @@ section {
         color: #46482F; }
       #team .container > div h2 {
         display: block;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        margin-bottom: 0; }
       #team .container > div dl dt {
         font-weight: normal; }
       #team .container > div dl dd {
         font-weight: bold;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        margin-right: 1rem; }
     #team .container .crew h2 {
       margin-top: 2em; }
 
 #trailer iframe {
   width: 100vw;
   height: 100vh; }
+
+#contact {
+  background: #46482F;
+  display: flex;
+  flex-direction: row; }
+  #contact .left {
+    background: #f1f1f1; }
+    #contact .left * {
+      text-align: center;
+      color: #46482F; }
+  #contact > * {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  #contact .social {
+    margin-bottom: 2rem; }
+    #contact .social li {
+      display: inline;
+      margin: 0 1rem; }
+  #contact .person p {
+    margin: .5rem; }
+    #contact .person p.role {
+      text-transform: uppercase; }
+  #contact .person a {
+    display: block;
+    margin: .5rem; }
+  #contact .right {
+    background: #46482F; }
+    #contact .right img {
+      width: 25vw;
+      margin-left: auto;
+      margin-right: auto; }
+
+#copyright {
+  text-align: center;
+  padding: 1rem 0; }
+  #copyright p {
+    margin-bottom: 0; }
 
 /*# sourceMappingURL=main.css.map */
