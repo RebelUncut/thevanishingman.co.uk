@@ -73,6 +73,9 @@ section {
 	 			color: $accent-color;
 	 			text-decoration: underline;
 	 		}
+	 		&:last-child {
+	 			border-right: 0;
+	 		}
 	 	}
 	}
 }

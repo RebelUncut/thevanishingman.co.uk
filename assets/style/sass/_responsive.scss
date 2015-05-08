@@ -21,6 +21,22 @@
 		}
 	}
 
+	#twitter-feed {
+		padding: 0;
+		ul {
+			display: block;
+			li {
+				display: block;
+				width: 100vw;
+				border-bottom: 1px solid darken($light-grey, 5%);
+				border-right: 0;
+				&:last-child {
+					border-bottom: 0;
+				}
+			}
+		}
+	}
+
 	#team {
 		padding: 2rem 0;
 		.container > div {

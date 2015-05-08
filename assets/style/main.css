@@ -245,6 +245,8 @@ section {
       #twitter-feed ul li a {
         color: #46482F;
         text-decoration: underline; }
+      #twitter-feed ul li:last-child {
+        border-right: 0; }
 
 #team {
   display: flex;
@@ -342,6 +344,18 @@ section {
     padding: 2rem 0; }
     #synopsis p {
       font-size: 1rem; }
+
+  #twitter-feed {
+    padding: 0; }
+    #twitter-feed ul {
+      display: block; }
+      #twitter-feed ul li {
+        display: block;
+        width: 100vw;
+        border-bottom: 1px solid #e4e4e4;
+        border-right: 0; }
+        #twitter-feed ul li:last-child {
+          border-bottom: 0; }
 
   #team {
     padding: 2rem 0; }
