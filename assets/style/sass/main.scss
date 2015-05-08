@@ -1,0 +1,76 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,700);
+
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
+
+body {
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+section {
+	min-height: 100vh;
+}
+
+#fold {
+	padding: 5vh;
+	background: {
+		image: url(../../assets/img/fold/VM001.jpg);
+		size: cover;
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+#synopsis {
+	background: #46482F;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	p {
+		@include outer-container;
+		color: white;
+		font-size: 1.75rem;
+		padding: 0 2rem;
+	}
+}
+
+#team {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	.container {
+		> div {
+			@include outer-container;
+			* {
+				display: inline;
+			}
+			h2 {
+				display: block;
+				text-transform: uppercase;
+			}
+			dl {
+				dt {
+					font-weight: normal;
+				}
+				dd {
+					font-weight: bold;
+					text-transform: uppercase;
+				}
+			}
+		}
+		.crew h2 {
+			margin-top: 2em;
+		}
+	}
+}
+
+#trailer {
+	iframe {
+		width: 100vw;
+		height: 100vh;
+	}
+}
