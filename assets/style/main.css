@@ -330,16 +330,22 @@ section {
   #future .bios {
     display: flex;
     flex-direction: row; }
-    #future .bios li {
+    #future .bios > li {
       width: 50vw; }
-      #future .bios li img {
+      #future .bios > li img {
         width: 100%; }
-      #future .bios li p {
+      #future .bios > li .inner {
         padding: 2.5vw; }
-        #future .bios li p a {
+        #future .bios > li .inner p {
+          margin-bottom: 2.5vw; }
+        #future .bios > li .inner a {
           text-transform: uppercase;
           font-weight: 700;
           text-decoration: none;
+          color: #8B804D; }
+        #future .bios > li .inner ul {
+          padding-bottom: 2.5vw; }
+        #future .bios > li .inner .name {
           color: #8B804D; }
 
 #contact {

@@ -177,17 +177,26 @@ section {
 	.bios {
 		display: flex;
 		flex-direction: row;
-		li {
+		> li {
 			width: 50vw;
 			img {
 				width: 100%;
 			}
-			p {
+			.inner {
 				padding: 2.5vw;
+				p {
+					margin-bottom: 2.5vw;
+				}
 				a {
 					text-transform: uppercase;
 					font-weight: 700;
 					text-decoration: none;
+					color: $accent-color;
+				}
+				ul {
+					padding-bottom: 2.5vw;
+				}
+				.name {
 					color: $accent-color;
 				}
 			}
