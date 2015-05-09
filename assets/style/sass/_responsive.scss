@@ -9,6 +9,16 @@
 			opacity: 1 !important;
 		}
 
+		img.logo {
+			margin: 2rem auto;
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+
+		.bottom {
+			bottom: 2rem;
+		}
+
 		i.fa {
 			display: none;
 		}
@@ -22,6 +32,7 @@
 		padding: 2rem 0;
 		p {
 			font-size: 1rem;
+			padding: 0 2rem;
 		}
 	}
 
@@ -44,6 +55,9 @@
 
 	#team {
 		padding: 2rem 0;
+		.container {
+			padding: 0 2rem;
+		}
 		.container > div {
 			h2 {
 				margin-bottom: 1rem;
@@ -73,6 +87,7 @@
 		}
 		.about {
 			background: $accent-color;
+			padding: 0 2rem;
 			p {
 				font-size: 1rem;
 				color: white;
@@ -82,6 +97,9 @@
 			display: block;
 			li {
 				width: 100vw;
+				p {
+					padding: 2rem;
+				}
 			}
 		}
 	}

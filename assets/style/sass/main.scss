@@ -78,6 +78,7 @@ section {
 		color: white;
 		font-size: 1.75rem;
 		padding: 0 2.5vw; 
+		margin-bottom: 0;
 	}
 }
 
@@ -90,6 +91,9 @@ section {
 	 		width: 33.3vw;
 	 		padding: 0 2.5vw;
 	 		border-right: 1px solid darken($light-grey, 5%);
+	 		p {
+	 			margin-bottom: 0;
+	 		}
 	 		a {
 	 			color: $accent-color;
 	 			text-decoration: underline;
