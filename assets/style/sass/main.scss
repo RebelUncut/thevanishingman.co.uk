@@ -12,7 +12,7 @@
 	}
 }
 
-$accent-color: #46482F;
+$accent-color: #8B804D;
 $light-grey: #f1f1f1;
 
 * {
@@ -31,19 +31,40 @@ section {
 	.cycle-bg-image {
 		background-size: cover !important;
 	}
-	img {
+	img.logo {
 		display: block;
-		margin: 7.5vh auto;
+		margin: 2rem auto;
 		padding-left: 2rem;
 		padding-right: 2rem; 
-	}
-	i.fa {
-		color: $accent-color;
-		bottom: 7.5vh;
 		position: absolute;
-		text-align: center;
+	}
+	.bottom {
 		width: 100%;
-		font-size: 1.5rem;
+		position: absolute;
+		bottom: 2rem;
+		%center {
+			display: block;
+			text-align: center;
+			color: white;
+			margin: 0 auto;
+		}
+		a.trailer {
+			@extend %center;
+			padding: .5em;
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+		i.fa {
+			@extend %center;
+			font-size: 1.5rem;
+		}
+	}
+	img.cff {
+		height: 4rem;
+		position: absolute;
+		right: 0;
+		margin-top: 2rem;
+		margin-right: 2rem;
 	}
 }
 
