@@ -65,6 +65,27 @@
 		}
 	}
 
+	#future {
+		display: block;
+		> * {
+			width: 100vw;
+			display: block;
+		}
+		.about {
+			background: $accent-color;
+			p {
+				font-size: 1rem;
+				color: white;
+			}
+		}
+		.bios {
+			display: block;
+			li {
+				width: 100vw;
+			}
+		}
+	}
+
 	#contact {
 		display: block;
 		> * {
