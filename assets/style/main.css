@@ -314,7 +314,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 2.5vw; }
+    padding: 5vw 2.5vw; }
     #future .about p {
       margin-bottom: 0; }
     #future .about * {
