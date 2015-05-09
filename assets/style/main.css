@@ -205,14 +205,14 @@ section {
   background-size: cover !important; }
 #fold img.logo {
   display: block;
-  margin: 2rem auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  margin: 2.5vw auto;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
   position: absolute; }
 #fold .bottom {
   width: 100%;
   position: absolute;
-  bottom: 2rem; }
+  bottom: 2.5vw; }
   #fold .bottom a.trailer, #fold .bottom i.fa {
     display: block;
     text-align: center;
@@ -228,8 +228,8 @@ section {
   height: 4rem;
   position: absolute;
   right: 0;
-  margin-top: 2rem;
-  margin-right: 2rem; }
+  margin-top: 2.5vw;
+  margin-right: 2.5vw; }
 
 #synopsis {
   background: #8B804D;
@@ -242,7 +242,7 @@ section {
     margin-right: auto;
     color: white;
     font-size: 1.75rem;
-    padding: 0 2rem; }
+    padding: 0 2.5vw; }
     #synopsis p:after {
       content: "";
       display: table;
@@ -250,12 +250,12 @@ section {
 
 #twitter-feed {
   background: #f1f1f1;
-  padding: 2rem 0; }
+  padding: 2.5vw 0; }
   #twitter-feed ul {
     display: flex; }
     #twitter-feed ul li {
       width: 33.3vw;
-      padding: 2rem;
+      padding: 0 2.5vw;
       border-right: 1px solid #e4e4e4; }
       #twitter-feed ul li a {
         color: #8B804D;
@@ -268,7 +268,7 @@ section {
   flex-direction: column;
   justify-content: center; }
   #team .container {
-    padding: 0 2rem; }
+    padding: 0 2.5vw; }
     #team .container > div {
       max-width: 68rem;
       margin-left: auto;
@@ -296,11 +296,57 @@ section {
           text-transform: uppercase;
           margin-right: .5rem; }
     #team .container .crew h2 {
-      margin-top: 2em; }
+      margin-top: 2.5vw; }
 
 #trailer iframe {
   width: 100vw;
   height: 100vh; }
+
+#future {
+  display: flex;
+  flex-direction: column; }
+  #future > * {
+    min-height: 50vh; }
+  #future .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem; }
+    #future .about * {
+      font-size: 1.75rem; }
+    #future .about > * {
+      max-width: 68rem;
+      margin-left: auto;
+      margin-right: auto; }
+      #future .about > *:after {
+        content: "";
+        display: table;
+        clear: both; }
+  #future .bios {
+    display: flex;
+    flex-direction: row; }
+    #future .bios li {
+      width: 50vw;
+      padding: 2.5vw; }
+      #future .bios li img {
+        width: 10vw;
+        float: left;
+        margin-right: 2.5vw;
+        margin-bottom: 2.5vw; }
+      #future .bios li a h1 {
+        width: 30vw;
+        float: left;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: black; }
+        #future .bios li a h1 .fn,
+        #future .bios li a h1 .ln {
+          display: block; }
+      #future .bios li p {
+        width: 45vw;
+        display: block;
+        overflow: auto;
+        margin-bottom: 0; }
 
 #contact {
   background: #8B804D;
@@ -370,7 +416,8 @@ section {
         display: block;
         width: 100vw;
         border-bottom: 1px solid #e4e4e4;
-        border-right: 0; }
+        border-right: 0;
+        padding: 2rem; }
         #twitter-feed ul li:last-child {
           border-bottom: 0; }
 

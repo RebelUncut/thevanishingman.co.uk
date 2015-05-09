@@ -33,15 +33,15 @@ section {
 	}
 	img.logo {
 		display: block;
-		margin: 2rem auto;
-		padding-left: 2rem;
-		padding-right: 2rem; 
+		margin: 2.5vw auto;
+		padding-left: 2.5vw;
+		padding-right: 2.5vw; 
 		position: absolute;
 	}
 	.bottom {
 		width: 100%;
 		position: absolute;
-		bottom: 2rem;
+		bottom: 2.5vw;
 		%center {
 			display: block;
 			text-align: center;
@@ -63,8 +63,8 @@ section {
 		height: 4rem;
 		position: absolute;
 		right: 0;
-		margin-top: 2rem;
-		margin-right: 2rem;
+		margin-top: 2.5vw;
+		margin-right: 2.5vw;
 	}
 }
 
@@ -77,18 +77,18 @@ section {
 		@include outer-container;
 		color: white;
 		font-size: 1.75rem;
-		padding: 0 2rem; 
+		padding: 0 2.5vw; 
 	}
 }
 
 #twitter-feed {
 	background: $light-grey;
-	padding: 2rem 0;
+	padding: 2.5vw 0;
 	ul {
 	 	display: flex;
 	 	li {
 	 		width: 33.3vw;
-	 		padding: 2rem;
+	 		padding: 0 2.5vw;
 	 		border-right: 1px solid darken($light-grey, 5%);
 	 		a {
 	 			color: $accent-color;
@@ -106,7 +106,7 @@ section {
 	flex-direction: column;
 	justify-content: center;
 	.container {
-		padding: 0 2rem;
+		padding: 0 2.5vw;
 		> div {
 			@include outer-container;
 			* {
@@ -137,7 +137,7 @@ section {
 			}
 		}
 		.crew h2 {
-			margin-top: 2em;
+			margin-top: 2.5vw;
 		}
 	}
 }
@@ -146,6 +146,57 @@ section {
 	iframe {
 		width: 100vw;
 		height: 100vh;
+	}
+}
+
+#future {
+	display: flex;
+	flex-direction: column;
+	> * {
+		min-height: 50vh;
+	}
+	.about {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 2rem;
+		* {
+			font-size: 1.75rem;
+		}
+		> * {
+			@include outer-container;
+		}
+	}
+	.bios {
+		display: flex;
+		flex-direction: row;
+		li {
+			width: 50vw;
+			padding: 2.5vw;
+			img {
+				width: 10vw;
+				float: left;
+				margin-right: 2.5vw;
+				margin-bottom: 2.5vw;
+			}
+			a h1 {
+				width: 30vw;
+				float: left;
+				font-size: 1.5rem;
+				font-weight: 700;
+				color: black;
+				.fn, 
+				.ln {
+					display: block;
+				}
+			}
+			p {
+				width: 45vw;
+				display: block;
+				overflow: auto;
+				margin-bottom: 0;
+			}
+		}
 	}
 }
 
