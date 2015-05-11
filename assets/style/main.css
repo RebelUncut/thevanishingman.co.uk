@@ -208,7 +208,8 @@ section {
   margin: 2.5vw auto;
   padding-left: 2.5vw;
   padding-right: 2.5vw;
-  position: absolute; }
+  position: absolute;
+  width: 50vw; }
 #fold .bottom {
   width: 100%;
   position: absolute;

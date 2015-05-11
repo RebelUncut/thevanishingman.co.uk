@@ -12,7 +12,7 @@ $("#fold").backgroundCycle({
 		"assets/img/fold/10.jpg",
 		"assets/img/fold/11.jpg",
 	],
-	duration: 5000,
+	duration: 10000,
 	fadeSpeed: 1000
 });
 
