@@ -13,6 +13,7 @@
 			margin: 2rem auto;
 			padding-left: 2rem;
 			padding-right: 2rem;
+			width: 100vw;
 		}
 
 		.bottom {
@@ -87,7 +88,7 @@
 		}
 		.about {
 			background: $accent-color;
-			padding: 0 2rem;
+			padding: 2rem;
 			p {
 				font-size: 1rem;
 				color: white;
@@ -95,10 +96,20 @@
 		}
 		.bios {
 			display: block;
-			li {
+			> li {
 				width: 100vw;
-				p {
-					padding: 2rem;
+				.inner {
+					padding: 0;
+					p {
+						padding: 2rem;
+						margin-bottom: 0;
+					}
+					ul {
+						padding: 0 2rem;
+					}
+					div.quote {
+						padding: 2rem;
+					}
 				}
 			}
 		}

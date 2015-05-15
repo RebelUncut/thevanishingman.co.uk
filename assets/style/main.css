@@ -405,7 +405,8 @@ section {
   #fold img.logo {
     margin: 2rem auto;
     padding-left: 2rem;
-    padding-right: 2rem; }
+    padding-right: 2rem;
+    width: 100vw; }
   #fold .bottom {
     bottom: 2rem; }
   #fold i.fa {
@@ -458,16 +459,23 @@ section {
       display: block; }
     #future .about {
       background: #8B804D;
-      padding: 0 2rem; }
+      padding: 2rem; }
       #future .about p {
         font-size: 1rem;
         color: white; }
     #future .bios {
       display: block; }
-      #future .bios li {
+      #future .bios > li {
         width: 100vw; }
-        #future .bios li p {
-          padding: 2rem; }
+        #future .bios > li .inner {
+          padding: 0; }
+          #future .bios > li .inner p {
+            padding: 2rem;
+            margin-bottom: 0; }
+          #future .bios > li .inner ul {
+            padding: 0 2rem; }
+          #future .bios > li .inner div.quote {
+            padding: 2rem; }
 
   #contact {
     display: block; }
